@@ -1,8 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {HttpClientModule} from '@angular/common/http';
-import{FormsModule,ReactiveFormsModule} from '@angular/forms';
-
 
 import {AboutusComponent} from '../app/aboutus/aboutus.component';
 import {ContactusComponent} from '../app/contactus/contactus.component';
