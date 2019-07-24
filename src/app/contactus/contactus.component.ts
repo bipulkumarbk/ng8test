@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { department } from '../Model/department';
+import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
 
 @Component({
   selector: 'app-contactus',
@@ -7,7 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactusComponent implements OnInit {
 
-  constructor() { }
+  depart: department[] = [
+    { Id: 1, departmentName: "IT" },
+    { Id: 2, departmentName: "QA" },
+    { Id: 3, departmentName: "QRT" }]
+
+    datepicker:Partial<BsDatepickerConfig>;
+
+   
+
+  constructor() { 
+    this.datepicker=Object.assign({},{
+      containerClass:'theme-dark-blue'
+    })
+  }
 
   ngOnInit() {
   }

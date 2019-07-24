@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
    
   userdata:object;
   constructor(private dataserv:DataService) { }
-   //"jQuery": "^1.7.4",
+   
   ngOnInit() {
     this.dataserv.getUserdata().subscribe(data=>{
         this.userdata=data
